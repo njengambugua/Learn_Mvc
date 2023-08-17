@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  height: 100vh;
+  width: 100%;
+}
+main{
+  height: 100%;
+  width: 100%;
+}
+.header{
+  height: 10%;
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+}
+.logo{
+  height: 100%;
+  width:30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img{
+  height: 6rem;
+  width: 6rem;
+}
+.navigation{
+  display: flex;
+  height: 100%;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.navigation ul{
+  display: flex;
+  gap: 1rem;
+}
+.navigation ul div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation ul div .bi{
+  font-size: 2rem;
+}
+.navigation ul div .bi:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.navigation ul a{
+  color: #000;
+  font-size: 1.2em;
+}
+.navigation ul a:hover{
+  text-transform: uppercase;
+}
+.search{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#search{
+  padding: 0.8rem;
+  border-radius: 1em;
+}
+#search:hover{
+  transform: scale(1.1);
+}
+article{
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+.main_cont{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_cont form{
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 20px;
+  background: #040c20b9;
+  gap: 2em;
+}
+.main_cont form div{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.main_cont form div label{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+}
+.main_cont form div input {
+  height: 35px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.main_cont form  #submit{
+  height: 40px;
+  width: 100px;
+  border: 0;
+  border-radius: 10px;
+}
+.main_cont form  #submit:hover{
+  cursor: pointer;
+  transform: scale(.8);
+}

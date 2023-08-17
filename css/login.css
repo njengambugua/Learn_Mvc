@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+body h2{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+body form {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-radius: 20px;
+    background: #040c20b9;
+    gap: 2em;
+}
+body form  div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+body form  div label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+body form  div input {
+    height: 35px;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+body form  div select {
+    height: 35px;
+}
+body form  #button{
+    height: 40px;
+    width: 100px;
+    border: 0;
+    border-radius: 10px;
+}
+body form  span{
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0;
+    margin-top: -20px;
+    gap: 10px;
+    width: 95%;
+}
+.error{
+    background-color: #040c20b9;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: fadeOut 3s 5s forwards;
+}
+.error p{
+    font-size: 1.1rem;
+}
+@keyframes fadeOut {
+    0% { 
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
